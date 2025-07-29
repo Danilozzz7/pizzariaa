@@ -1,5 +1,6 @@
 package com.itb.inf2am.pizzariaa.controller;
 
+import com.itb.inf2am.pizzariaa.model.entity.Categoria;
 import com.itb.inf2am.pizzariaa.model.entity.Produto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,21 +12,21 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/api/v1/produto")
+@RestController("/api/v1/categoria")
 public class CategoriaController {
 
-    List<Produto> categorias = new ArrayList<Produto>();
+    List<Categoria> categorias = new ArrayList<Produto>();
 
 
     @GetMapping
-    public List<Produto> findAll() {
+    public List<Categoria> findAll() {
 
-        Produto p1 = new Produto();
+        Categoria = new categoria();
         p1.setNome("Pizza de Calabreza");
         p1.setDescricao("Pizza com muita Calabreza e cebola");
         p1.setValorVenda(49.50);
 
-        Produto p2 = new Produto();
+        Categoria p2 = new categoria();
         p2.setNome("Pizza de Calabreza");
         p2.getDescricao("Pizza com queijo");
         p2.setValorVenda(49.50);
